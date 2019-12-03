@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sms-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: b7d3e320-a279-4ef8-a7e2-30f83c3df0ea
+        group: dev
+        file-extension: yml
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/sms/**/*.xml

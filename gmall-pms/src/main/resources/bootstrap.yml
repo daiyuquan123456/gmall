@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: pms-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: ee1bdb50-0500-47cd-9dd6-0d4f521a62d5
+        group: dev
+        file-extension: yml
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/pms/**/*.xml
